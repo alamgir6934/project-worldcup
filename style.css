@@ -1,0 +1,51 @@
+.body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* start-banner-section */
+
+.container {
+    position: absolute;
+    width: 1321px;
+    height: 646px;
+    left: 100px;
+    top: 50px;
+}
+
+.top-banners {
+    background-color: aquamarine;
+    padding: 10px 50px;
+    margin-right: 225px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+}
+
+.banner-text {
+    align-items: center;
+}
+
+.banner-heading {
+    font-weight: 700;
+    font-size: 70px
+}
+
+.button {
+    background-color: #DD0000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 45px;
+
+}
+
+.banner-image {
+    align-items: center;
+}
