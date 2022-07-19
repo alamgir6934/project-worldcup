@@ -80,7 +80,9 @@
     padding: 10px 10px; */
 }
 
-
+.button-btn {
+    border-radius: 10px;
+}
 
 .button-btn a {
     text-decoration: none;
@@ -89,6 +91,7 @@
 
 .btn {
     background-color: red;
+    border-radius: 10px;
 }
 
 .btn a {
