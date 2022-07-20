@@ -2,31 +2,43 @@
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
 /* start-banner-section */
 
 .container {
     /* position: absolute; */
     width: 1321px;
     height: 486px;
-    left: 100px;
-    top: 50px;
+    /* left: 100px;
+    top: 50px; */
 }
 
-.top-banners {
-    background-color: rgba(223, 210, 155, 0.74);
-    padding: 10px 50px;
-    /* margin-right: 100px;
+/* .top-banners {
+    /* display: flex; */
+/* background-color: rgba(223, 210, 155, 0.74);
+    padding: 10px 50px; */
+/* margin-right: 100px;
     margin-left: 100px; */
-    margin: 20px 100px;
-    position: relative;
-    border-radius: 20px;
-}
+/* margin: 20px 100px;
+    border-radius: 20px; */
+
 
 .banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    background-color: rgba(223, 210, 155, 0.74);
+    padding: 10px 50px;
+    margin: 20px 100px;
+    border-radius: 5px;
 
 }
 
@@ -62,7 +74,7 @@
 /* end-banner-section */
 
 /* blog-section-start */
-.match {
+.button-match {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -123,7 +135,7 @@
 
 .blog {
     width: 264px;
-    height: 394px;
+    height: 410px;
     display: flex;
     flex-direction: column;
     column-gap: 20px;
@@ -144,13 +156,12 @@
     margin-left: 16px;
 }
 
-.blog-title {
-    font-size: 20px;
+.blog-button {
+    border-radius: 5px;
 }
 
-.blog-author {
-    color: #9F9F9F;
-    font-size: 16px;
+.blog-title {
+    font-size: 20px;
 }
 
 .blog-author a {
@@ -174,36 +185,164 @@
 
 /* footer section start */
 .footer {
-    justify-content: space-between;
     background-color: rgba(223, 210, 155, 0.74);
     height: 200px;
+    margin-top: 500px;
 }
 
-.footer-title {
-    line-height: 60px;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
+.footer-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+hr {
     color: black;
-    margin-top: 350px;
 }
 
 .footer-menu {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    margin-top: 30px;
-
-
+    padding: 0 10px;
 }
 
 .footer-menu a {
+    padding: 0 45px;
+    font-size: 20pxpx;
     text-decoration: none;
+}
+
+
+/* end of footer section */
+
+
+
+/* upcoming-match-style */
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 13px;
+    /* justify-items: stretch; */
     justify-content: space-evenly;
-    padding: 0 24px;
-    font-size: 20px;
-    font-weight: 600;
+    /* align-content: stretch; */
+    grid-column-gap: 13px;
+}
+
+.match {
+    width: 264px;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 30px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: blueviolet;
 
 }
 
-/* end of footer section */
+.head-four {
+    color: aliceblue;
+}
+
+.thumbnail {
+    display: flex;
+}
+
+.match .thumbnail img {
+    width: 122px;
+    height: 60px;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+
+.match-info {
+    text-align: center;
+}
+
+.match-icon {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+
+}
+
+/* match-footer */
+.match-footer {
+    background-color: rgba(223, 210, 155, 0.74);
+    height: 200px;
+    margin-top: 170px;
+}
+
+
+
+
+
+
+
+
+
+/* end of upcoming match style */
+
+
+
+/* responsive media query */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner,
+    .blogs,
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 275px;
+        margin: 20px 50px;
+
+    }
+
+    .banner-text {
+        text-align: center;
+        font-size: 40px;
+        padding: 0 50px;
+        flex-direction: column;
+    }
+
+    .button-match {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 700px;
+        column-gap: 20px;
+    }
+
+    .link-button {
+        background-color: white;
+    }
+
+    .footer {
+        margin-top: 3034px;
+        height: 350px;
+        flex-direction: column;
+        /* padding: 0 50px; */
+    }
+
+    .footer-menu a {
+        padding: 0 150px;
+        color: black;
+        font-weight: 700;
+        display: grid;
+        justify-items: center;
+    }
+
+    .match-footer {
+        margin-top: 2342px;
+        height: 350px;
+        flex-direction: column;
+    }
+
+
+}
