@@ -225,6 +225,11 @@ hr {
     text-decoration: none;
 }
 
+.social-icon {
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 /* end of footer section */
 
@@ -367,7 +372,6 @@ hr {
         width: 100%;
     }
 
-    .banner,
     .blogs,
     .matches {
         display: grid;
@@ -376,6 +380,16 @@ hr {
         align-items: center;
         width: 100%;
 
+    }
+
+    .banner {
+        padding-right: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* justify-content: center;
+        align-items: center; */
+        width: 100%;
     }
 
     .banner-text {
@@ -408,21 +422,29 @@ hr {
     }
 
     .footer-match {
-        margin-top: 2500px;
+        margin-top: 100px;
         height: 350px;
         background-color: rgba(223, 210, 155, 0.74);
     }
 
     #menu_btn {
-        margin-left: 315px;
-        margin-top: 1416px;
+        position: relative;
+        margin-left: 230px;
+        margin-top: 1300px;
         display: inline-block;
-        background-color: black;
-        color: whitesmoke;
+        background-color: white;
+        color: red;
         border-radius: 5px;
         margin-bottom: 10px;
         width: 150px;
         height: 45px;
+    }
+
+    #menu_btn a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
     }
 
     .button-group {
