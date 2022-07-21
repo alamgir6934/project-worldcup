@@ -64,7 +64,19 @@ main {
     margin-bottom: 10px;
     width: 150px;
     height: 45px;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
 
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .banner-image {
@@ -182,7 +194,7 @@ main {
 }
 
 /* end-blog-section */
-.hidden-button {}
+/* .hidden-button {} */
 
 /* footer section start */
 .footer,
@@ -270,7 +282,9 @@ hr {
 }
 
 
-
+#menu_btn {
+    display: none;
+}
 
 
 
@@ -342,6 +356,10 @@ hr {
         justify-items: center;
     }
 
+    #menu_btn {
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width:689px) and (max-width:996px) {
@@ -383,7 +401,7 @@ hr {
 
     .footer {
         width: 100%;
-        margin-top: 1500px;
+        margin-top: 350px;
         height: 350px;
         flex-direction: column;
         /* padding: 0 50px; */
@@ -396,7 +414,15 @@ hr {
     }
 
     #menu_btn {
+        margin-left: 315px;
+        margin-top: 1416px;
         display: inline-block;
+        background-color: black;
+        color: whitesmoke;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 150px;
+        height: 45px;
     }
 
     .button-group {
@@ -413,14 +439,10 @@ hr {
         justify-content: space-evenly;
     }
 
-    /* .hidden-button {
-        background-color: black;
-        color: whitesmoke;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        width: 150px;
-        height: 45px;
-    } */
+    #menu_btn {
+        display: inline-block;
+        /* display: none; */
+    }
 
     /* .footer-menu a {
         padding: 0 150px;
