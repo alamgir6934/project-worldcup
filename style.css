@@ -8,6 +8,7 @@ main {
     align-items: center;
     border-radius: 5px;
     margin-top: 21px;
+    overflow-x: hidden;
 }
 
 /* start-banner-section */
@@ -36,7 +37,7 @@ main {
     justify-items: center;
     align-items: center;
     background-color: rgba(223, 210, 155, 0.74);
-    padding: 0 50px;
+    /* padding: 0 50px; */
     margin: 0 100px;
     border-radius: 5px;
 
@@ -66,18 +67,30 @@ main {
     height: 45px;
     box-shadow: 0 9px #999;
     cursor: pointer;
+    animation-name: button;
+    animation-duration: 4s;
 
 }
 
-.button:hover {
-    background-color: #3e8e41
+@keyframes button {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
 }
 
-.button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
+
 
 .banner-image {
     align-items: center;
@@ -305,6 +318,7 @@ hr {
 @media only screen and (max-width:688px) {
     .container {
         width: 100%;
+        overflow: hidden;
     }
 
     .banner,
@@ -315,9 +329,11 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
-        width: 350px;
-        margin: 20px 50px;
+        width: 100%;
+        /* margin: 20px 50px; */
         padding-left: 56px;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
     }
 
@@ -343,10 +359,12 @@ hr {
         margin-top: 3050px;
         height: 350px;
         flex-direction: column;
+        overflow-x: hidden;
         /* padding: 0 50px; */
     }
 
     .footer-match {
+        overflow-x: hidden;
         margin-top: 2500px;
         height: 350px;
         background-color: rgba(223, 210, 155, 0.74);
@@ -390,6 +408,7 @@ hr {
         /* justify-content: center;
         align-items: center; */
         width: 100%;
+        overflow-x: hidden;
     }
 
     .banner-text {
